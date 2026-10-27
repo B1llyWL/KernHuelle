@@ -1,7 +1,7 @@
 export async function loadLayout() {
     try {
-        
-        const headerResponse = await fetch('/html/header.html');
+        // Путь теперь просто /header.html, так как файл лежит в public/
+        const headerResponse = await fetch('/header.html');
         if (!headerResponse.ok) throw new Error('Header не найден');
         
         const headerContainer = document.getElementById('header-container');
@@ -9,7 +9,8 @@ export async function loadLayout() {
             headerContainer.innerHTML = await headerResponse.text();
         }
 
-        const footerResponse = await fetch('/html/footer.html');
+        // Путь теперь просто /footer.html
+        const footerResponse = await fetch('/footer.html');
         if (!footerResponse.ok) throw new Error('Footer не найден');
         
         const footerContainer = document.getElementById('footer-container');
