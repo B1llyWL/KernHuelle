@@ -1,3 +1,4 @@
+import '../src/input.css'; 
 //Импорт хедера и футера
 import { loadLayout } from './layout.js';
 
