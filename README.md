@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JS-E34F26?style=for-the-badge&logo=js&logoColor=white" alt="JS">
   <img src="https://img.shields.io/badge/TailwindCss-1572B6?style=for-the-badge&logo=TailwindCss&logoColor=white" alt="Tailwind css">
+  <img src="https://img.shields.io/badge/Netlify-092E20?style=for-the-badge&logo=Netlify&logoColor=white" alt="Netlify">
 </p>
 <p align="center">
   A custom clothing store catering to users of various operating systems and distributions-both official and custom.
