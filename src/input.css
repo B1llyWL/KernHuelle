@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Nabla&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Kelly Slab', sans-serif !important;
+  }
+}
+
+@layer components {
+  .font-kellyslab {
+    font-family: 'Kelly Slab', sans-serif !important;
+  }
+  
+  .font-nabla {
+    font-family: 'Nabla', cursive !important;
+  }
+}
+
+
+.burger {
+    height: 20px;
+    position: relative;
+    width: 30px;
+}
+.burger-line{
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background: #6243ed;
+    transition: .3s all ease;
+}
+
+.top-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mid-line {
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.burger.active> .top-line {
+    transform: translateY(9px) rotate(45deg);
+    transition: .3s all ease;
+}
+.burger.active> .mid-line {
+    opacity: 0;
+    transition: .3s all ease;
+}
+.burger.active> .bottom-line {
+    transform: translateY(-9px) rotate(45deg);
+    transition: .3s all ease;
+}

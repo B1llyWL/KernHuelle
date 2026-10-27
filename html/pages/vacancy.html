@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карьера | KernHülle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Nabla&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+
+    <div id="header-container"></div>
+    
+    <main class="py-20 px-6 md:px-10">
+      <div class="container mx-auto max-w-6xl">
+        <h1 class="font-black text-4xl md:text-5xl text-center mb-4">Открытые позиции</h1>
+        <p class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+          Мы не требуем 5 лет опыта работы с технологией, которая вышла вчера..
+        </p>
+        
+        <!-- Сюда JS вставит карточки вакансий -->
+        <div id="vacancy-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <button id="mode" class="btn fixed right-2 bottom-2 text-sm">
+      🌓 Тема
+    </button>
+    
+    <!-- АБСОЛЮТНЫЕ ПУТИ -->
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      import { renderVacancies } from '/js/vacancy.js';
+      renderVacancies();
+    </script>
+  </body>
+</html>

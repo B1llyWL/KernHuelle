@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KernHülle</title>
+
+    <!-- ШРИФТЫ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Nabla&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!--ХЕДЕР-->
+    <div id="header-container"></div>
+    
+    <main>
+      <div id="app"></div>
+      <section id="hero">
+        <div class="container">
+          <h1 class="pt-24 font-black text-5xl max-w-2xl text-center mx-auto leading-snug lg:text-4xl lg:pl-16 md:text-3xl md:pt-12 md:max-w-full sm:pt-10 sm:text-2xl">0 багов. 100% стиля.</h1>
+          <p class="text-xl tracking-tight text-center max-w-xl mx-auto mt-[18px] md:text-lg md:mt-4 sm:mt-2 sm:text-base">Одежда для тех, кто помнит звук модема и не боится синего экрана смерти.</p>
+
+          <div class="flex justify-center gap-7" >
+            <a href="/html/pages/catalog.html" class="inline-block mt-6 py-[10px] px-8 shadow-customblue  bg-lightbody">catalog.exe</a>
+            <a href="#" class="inline-block mt-6 py-[10px] px-8 border-[1px] border-lightyellow">buy.exe</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 px-6 md:px-10">
+        <div class="container mx-auto max-w-6xl">
+          <div class="flex flex-col md:flex-row gap-12 items-start">
+
+              <div class="flex flex-col gap-6 md:w-1/2">
+              <h1 class="font-black text-3xl max-w-2xl ">О нас</h1>
+              <h2 class="text-xl max-w-xl"> Как всё начиналось</h2>
+                 <p>
+                    В 2024 году мы сидели в IRC-канале и спорили о том, какой дистрибутив Linux лучше. Как обычно. Но потом кто-то сказал: <br> «А почему нет одежды, которая бы это выражала?»
+                    Мы посмотрели на рынок. Увидели одинаковые футболки с пингвином Tux и надписью <br>«<span class="text-lightgreen font-bold">I use Arch,btw</span>». Увидели худи с логотипами корпораций, которые никто не носит. Увидели пустоту.
+                    И решили заполнить её. Так родился <i>KernHülle</i>(Кернхули).
+                 </p>
+                    <h2 class="text-xl max-w-xl">Наше имя? Это немецкое слово, составленное из двух частей:</h2>
+                    <p>
+                      <span class="text-lightbody font-bold"> Kern</span>= ядро (то, что внутри)<br>
+                      <span class="text-lightyellow font-bold"> Hülle</span> = оболочка (то, что снаружи)<br>
+                      Как в операционной системе. Как в тебе.
+                    </p>
+                    <h2 class="text-xl max-w-xl">Что мы делаем?</h2>
+                    <p>
+                       Шьем одежду с принтами, которые поймут свои. Если ты знаешь, что такое<span class="text-lightgreen font-bold"> sudo rm -rf /, BSOD, kernel panic</span> или<span class="text-lightgreen font-bold"> 640K ought to be enough for anybody</span> - ты наш человек.
+                    </p>
+                    <h2 class="text-xl max-w-xl">Наш стандарт?</h2>
+                    <ul>
+                    <li>• 0 багов в коде. </li>
+                    <li>• 0 бракованных швов. </li>
+                    <li>• 100% стиля. </li>
+                    </ul>
+                    <h2 class="text-xl max-w-xl">Наша аудитория?</h2>
+                    <p>
+                    Ты. Да, ты, который читает это и кивает.<br>
+                    Добро пожаловать в KernHülle. <span class="text-lightgreen font-bold"> useradd завершен</span>. <br>
+                  </p>
+                
+                </div>
+                          <div class="flex justify-center items-center md:w-1/2 mt-16 md:mt-0">
+                <div>
+                    <img src="/assets/images/about.jpeg" alt="about" 
+                        class="w-full max-w-lg rounded-2xl shadow-2xl object-cover">
+                    <p class="text-center text-gray-600 mt-4 font-kellyslab text-sm">
+                      Наша команда: бизнес-аналитик, мусульманка-дизайнерка, 
+                      гот-тестировщик, тимлид, принцесса-PM, монах-девопс 
+                      и два смурфика-стажёра. 
+                  </p>
+                        <img src="/assets/images/factory.jpeg" alt="Наш цех" 
+                        class="w-full max-w-lg rounded-2xl shadow-2xl object-cover">
+                          <p class="text-center text-gray-600 mt-4 font-kellyslab text-sm">
+                            Наш цех.
+                        </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--ФУТЕР-->
+    <div id="footer-container"></div>
+
+    <button id="mode" class="btn fixed right-2 bottom-2 text-sm"> 🌓 Тема</button>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
